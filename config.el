@@ -89,3 +89,5 @@
   (setq pyim-default-scheme 'xiaohe-shuangpin)
   (setq pyim-page-length 5)
   )
+;; yasnippets
+(map! :i "C-<tab>" #'yas-next-field)
