@@ -91,3 +91,7 @@
   )
 ;; yasnippets
 (map! :i "C-<tab>" #'yas-next-field)
+
+;; org
+(after! org
+  (setq org-startup-folded t))
