@@ -49,3 +49,6 @@
 ;; (unpin! t)
 (package! ox-hugo
   :recipe (:host github :repo "kaushalmodi/ox-hugo"))
+
+(package! pyim)
+(package! pyim-basedict)

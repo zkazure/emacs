@@ -79,3 +79,13 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+(use-package pyim
+  :config
+  (setq default-input-method "pyim")
+  (global-set-key (kbd "C-\\") 'toggle-input-method)
+  (use-package! pyim-basedict
+    :config
+    (pyim-basedict-enable))
+  (setq pyim-default-scheme 'xiaohe-shuangpin)
+  (setq pyim-page-length 5)
+  )
