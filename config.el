@@ -94,6 +94,10 @@
 (after! org
   (setq org-startup-folded t)
   (setq org-log-done 'time))
+(map! :leader
+      :desc "Org Agenda"
+      "o o" #'org-agenda)
+
 ;;; <<< END <<<
 
 
