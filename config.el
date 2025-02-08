@@ -119,3 +119,9 @@
 ;; yasnippets
 (map! :i "C-<tab>" #'yas-next-field)
 
+
+;; 打开网址的默认浏览器 C-c C-o
+(setq browse-url-browser-function
+      (lambda (url &optional _new-window)
+        (call-process "/mnt/c/Windows/System32/cmd.exe" nil 0 nil
+                      "/c" "start" "" url)))
