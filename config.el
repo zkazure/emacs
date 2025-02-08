@@ -92,7 +92,8 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 (after! org
-  (setq org-startup-folded t))
+  (setq org-startup-folded t)
+  (setq org-log-done 'time))
 ;;; <<< END <<<
 
 
