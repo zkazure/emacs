@@ -173,3 +173,6 @@
       (lambda (url &optional _new-window)
         (call-process "/mnt/c/Windows/System32/cmd.exe" nil 0 nil
                       "/c" "start" "" url)))
+
+;; treemacs
+(setq treemacs-git-mode 'deferred)
