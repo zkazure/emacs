@@ -98,6 +98,54 @@
       :desc "Org Agenda"
       "o o" #'org-agenda)
 
+;; ("模板键" "模板描述" 类型 (目标位置) "模板内容" :选项 选项值)
+;; 类型：指定捕获内容的类型，常见的有 entry（表示创建一个 Org 条目）。
+;; 选项：可选参数，用于控制模板的一些行为，如 :prepend 表示是否将新条目添加到目标位置的开头。
+(after! org
+  (setq org-capture-templates
+        '(("t" "Todo" entry
+           (file+headline +org-capture-todo-file "Inbox")
+           "* [ ] %?\n%i" :prepend t)
+          ("n" "=Notes" entry
+           (file+headline +org-capture-notes-file "Inbox")
+           "* %u %?\n%i" :prepend t)
+          ("j" "Journal" entry
+           (file+olp+datetree +org-capture-journal-file)
+           "* %U %?\n%i" :prepend t)
+
+          ("a" "Authority templates")
+          ("at" "Personal todo" entry
+           (file+headline +org-capture-todo-file "Inbox")
+           "* [ ] %?\n%i\n%a" :prepend t)
+          ;; 类型：entry，创建一个 Org 条目。
+          ;; 目标位置：(file+headline +org-capture-todo-file "Inbox")，表示将捕获的内容保存到 +org-capture-todo-file 这个文件的 "Inbox" 标题下。+org-capture-todo-file 是 Doom Emacs 中预定义的一个变量，指向待办事项文件。
+          ;; 模板内容："* [ ] %?\n%i\n%a"，创建一个未完成的待办事项条目。* 表示 Org 模式中的标题级别，[ ] 表示未完成的任务标记，%? 是插入点，%i 表示插入当前选中的文本，%a 表示插入当前活动的链接。
+          ;; 选项：:prepend t，表示将新的待办事项条目添加到 "Inbox" 标题下内容的开头。
+          ("an" "Personal notes" entry
+           (file+headline +org-capture-notes-file "Inbox")
+           "* %u %?\n%i\n%a" :prepend t)
+          ;; 模板内容："* %u %?"，%u 表示插入当前日期，创建一个带有日期的笔记条目。
+          ("aj" "Journal" entry
+           (file+olp+datetree +org-capture-journal-file)
+           "* %U %?\n%i\n%a" :prepend t)
+          ;; 模板内容："* %U %?"，%U 表示插入当前日期和时间，创建一个带有日期和时间的日记条目
+
+          ("p" "Templates for projects")
+          ("pt" "Project-local todo" entry
+           (file+headline +org-capture-project-todo-file "Inbox")
+           "* TODO %?\n%i\n%a" :prepend t)
+          ("pn" "Project-local notes" entry
+           (file+headline +org-capture-project-notes-file "Inbox")
+           "* %U %?\n%i\n%a" :prepend t)
+          ("pc" "Project-local changelog" entry
+           (file+headline +org-capture-project-changelog-file "Unreleased")
+           "* %U %?\n%i\n%a" :prepend t)
+
+          ("o" "Centralized templates for projects")
+          ("ot" "Project todo" entry #'+org-capture-central-project-todo-file "* TODO %?\n %i\n %a" :heading "Tasks" :prepend nil)
+          ("on" "Project notes" entry #'+org-capture-central-project-notes-file "* %U %?\n %i\n %a" :heading "Notes" :prepend t)
+          ("oc" "Project changelog" entry #'+org-capture-central-project-changelog-file "* %U %?\n %i\n %a" :heading "Changelog" :prepend t)
+          )))
 ;;; <<< END <<<
 
 
