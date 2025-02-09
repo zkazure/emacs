@@ -106,7 +106,7 @@
         '(("t" "Todo" entry
            (file+headline +org-capture-todo-file "Inbox")
            "* [ ] %?\n%i" :prepend t)
-          ("n" "=Notes" entry
+          ("n" "Notes" entry
            (file+headline +org-capture-notes-file "Inbox")
            "* %u %?\n%i" :prepend t)
           ("j" "Journal" entry
