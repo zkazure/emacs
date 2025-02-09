@@ -52,3 +52,5 @@
 
 (package! pyim)
 (package! pyim-basedict)
+
+(package! graphviz-dot-mode)
