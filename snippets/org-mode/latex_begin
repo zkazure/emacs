@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex begin
+# key: \latex
+# condition: t
+# --
+\begin{${1:envir}}
+${0}
+\end{${1}}
