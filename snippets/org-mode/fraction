@@ -1,5 +1,0 @@
-# -*- mode: snippet -*-
-# name: fraction
-# key: frac
-# --
-\frac{${1:numerater}}{${2:denominator}} ${3}
