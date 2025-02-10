@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: latex_begin
-# key: \begin
+# name: begin latex
+# key: \latex
 # condition: t
 # --
 \begin{${1:envir}}

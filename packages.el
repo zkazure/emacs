@@ -54,3 +54,5 @@
 (package! pyim-basedict)
 
 (package! graphviz-dot-mode)
+
+(package! cdlatex)
