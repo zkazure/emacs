@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: formula
+# key: \
+# condition: t
+# --
+\\( ${0} \\)
