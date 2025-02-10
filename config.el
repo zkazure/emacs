@@ -96,7 +96,7 @@
   (setq org-log-done 'time))
 (setq org-latex-packages-alist
       '(("fontset=SimSun,UTF8" "ctex" t)))
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.2))
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.05))
 (setq org-preview-latex-default-process 'dvisvgm)
   (setq org-preview-latex-process-alist
         '((dvisvgm :programs
