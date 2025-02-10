@@ -184,6 +184,8 @@
   (setq pyim-default-scheme 'xiaohe-shuangpin)
   (setq pyim-page-length 5)
   )
+(map! :after pyim
+      :i "C-;" #'pyim-punctuation-toggle)
 ;;; <<< END <<<
 
 
