@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: latex enumerate
+# key: enumerate
+# condition: t
+# --
+\begin{enumerate}
+\item ${1:item_1} \\\
+\item ${2} \\\
+\end{enumerate}

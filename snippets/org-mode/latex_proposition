@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex proposition
+# key: proposition
+# condition: t
+# --
+\begin{proposition}
+${1}
+\end{proposition}

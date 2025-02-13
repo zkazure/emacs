@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: latex_limits
+# key: limits
+# condition: t
+# --
+\lim\limits_{${1} \to ${2}}${3:function} (${4:domain}) ${0}

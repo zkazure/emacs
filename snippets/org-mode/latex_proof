@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex proof
+# key: proof
+# condition: t
+# --
+\begin{proof}
+${1}
+\end{proof}

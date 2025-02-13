@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex corollary
+# key: corollary
+# condition: t
+# --
+\begin{corollary}
+${1}
+\end{corollary}

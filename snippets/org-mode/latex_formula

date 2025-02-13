@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: latex formula
-# key: \
+# key: formula
 # condition: t
 # --
-\\( ${0} \\)
+\\( ${1} \\)

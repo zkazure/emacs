@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: latex itemize
+# key: itemize
+# condition: t
+# --
+\begin{itemize}
+\item ${1:item_1} \\\
+\item ${2} \\\
+\end{itemize}
