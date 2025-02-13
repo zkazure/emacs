@@ -100,7 +100,8 @@
       ("" "amsmath" t)))
   (setq org-export-with-smart-quotes t)
   (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.2))
-  (setq org-preview-latex-default-process 'dvisvgm)
+  (setq org-preview-latex-default-process 'dvisvgm) ;; dvisvgm
+  (setq org-startup-with-latex-preview t)
   (setq org-preview-latex-process-alist
         '((dvisvgm :programs
                 ("xelatex" "dvisvgm")
