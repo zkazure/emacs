@@ -99,7 +99,7 @@
     '(("fontset=SimSun,UTF8" "ctex" t)
       ("" "amsmath" t)))
   (setq org-export-with-smart-quotes t)
-  (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.05))
+  (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.2))
   (setq org-preview-latex-default-process 'dvisvgm)
   (setq org-preview-latex-process-alist
         '((dvisvgm :programs
@@ -179,15 +179,16 @@
   (setq default-input-method "pyim")
   (global-set-key (kbd "C-\\") 'toggle-input-method)
   (use-package! pyim-basedict
-    :config
-    (pyim-basedict-enable))
+    :ensure nil
+    :config (pyim-basedict-enable))
   (setq pyim-default-scheme 'xiaohe-shuangpin)
   (setq pyim-page-length 5)
   )
 (map! :after pyim
       :i "C-;" #'pyim-punctuation-toggle)
+(eval-after-load 'pyim
+  '(setq pyim-punctuation-translate-p '(no yes auto)))
 ;;; <<< END <<<
-
 
 
 ;; yasnippets
