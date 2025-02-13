@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex_cases
+# key: \cases
+# --
+\begin{cases}
+${1:expresion} & ${2:condition} \\\
+${3} & ${4} \\\
+\end{cases}

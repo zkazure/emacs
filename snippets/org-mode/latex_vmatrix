@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: latex_vmatrix
+# key: \vmatrix
+# --
+
+\begin{vmatrix}
+${1} & ${3} \\\
+${2} & ${4} \\\
+\end{vmatrix}

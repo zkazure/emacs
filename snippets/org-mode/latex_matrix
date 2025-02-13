@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: latex_matrix
+# key: \matrix
+# --
+\left \\{ \begin{matrix}
+${1} & ${3} \\\
+${2} & ${4} \\\
+\end{matrix} \right \\}
