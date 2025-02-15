@@ -93,6 +93,7 @@
 ;; (setq org-directory "~/org/")
 (setq org-directory "/mnt/d/Personal/org/")
 (after! org
+  (setq org-directory "/mnt/d/Personal/org/")
   (setq org-startup-folded t)
   (setq org-log-done 'time))
 (after! org
