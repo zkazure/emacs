@@ -185,12 +185,11 @@
     :ensure nil
     :config (pyim-basedict-enable))
   (setq pyim-default-scheme 'xiaohe-shuangpin)
+  (setq pyim-page-tooltip 'popup)
   (setq pyim-page-length 5)
   )
 (map! :after pyim
       :i "C-;" #'pyim-punctuation-toggle)
-(eval-after-load 'pyim
-  '(setq pyim-punctuation-translate-p '(no yes auto)))
 ;;; <<< END <<<
 
 
