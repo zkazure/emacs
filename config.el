@@ -67,8 +67,9 @@
 ;; wasn't installed correctly. Font issues are rarely Doom issues!
 (setq doom-font (font-spec :family "Sarasa Mono SC" :size 18)
       doom-serif-font doom-font
-      doom-symbol-font (font-spec :family "Sarasa Mono SC")
-      doom-variable-pitch-font (font-spec :family "Sarasa Mono SC"))
+      doom-symbol-font (font-spec :family "Sarasa Mono SC"))
+(set-fontset-font t 'han (font-spec :family "Noto Serif CJK"))
+(set-fontset-font t 'latin (font-spec :family "Fira Code"))
 ;;; <<< END <<<
 
 
