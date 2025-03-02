@@ -1,0 +1,3 @@
+#+title: Readme
+
+This is the configuration of compiled emacs29.4, and is available on Ubuntu 24.04.
