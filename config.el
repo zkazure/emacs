@@ -82,3 +82,12 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(use-package! org-mind-map
+  :init
+  ;; Ensure that org-mode’s export backend is loaded
+  (require 'ox-org)
+  :config
+  ;; Set the Graphviz engine you’d like to use.
+  ;; Options include "dot" (default), "neato", "twopi", "circo", etc.
+  (setq org-mind-map-engine "dot"))

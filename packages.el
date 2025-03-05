@@ -50,3 +50,5 @@
 
 (package! ox-hugo
   :recipe (:host github :repo "kaushalmodi/ox-hugo"))
+
+(package! org-mind-map :recipe (:host github :repo "the-humanities/org-mind-map"))
